@@ -12,7 +12,7 @@
 		{
 			"type":"shell",
 			"label": "run executable",
-			"command": "${workspaceRoot}/build/VSCodeCppTemplate.exe",
+			"command": "${workspaceRoot}/build/FBXTest.exe",
 			"dependsOn":["cmake"],
 			"dependsOrder": "sequence",
 			"group": {
