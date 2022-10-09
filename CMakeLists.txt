@@ -12,7 +12,7 @@ enable_testing()
 
 file(GLOB_RECURSE SOURCES LIST_DIRECTORIES false RELATIVE "${CMAKE_SOURCE_DIR}" CONFIGURE_DEPENDS "sources/*.cpp")
 
-add_executable(${ProjectName} ${SOURCES})
+add_library(${ProjectName} ${SOURCES})
 
 target_include_directories(${ProjectName} PUBLIC "${CMAKE_SOURCE_DIR}/sources" "C:/Program Files/Autodesk/FBX/FBX SDK/2020.3.2/include")
 target_link_directories(${ProjectName} PUBLIC "C:/Program Files/Autodesk/FBX/FBX SDK/2020.3.2/lib/vs2019/x64/debug")
