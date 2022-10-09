@@ -24,7 +24,7 @@
 		{
 			"type":"shell",
 			"label": "run executable",
-			"command": "${workspaceRoot}/build/FBXTest.exe",
+			"command": "${workspaceRoot}/build/FBXTestExe.exe",
 			"dependsOn":["cmake"],
 			"dependsOrder": "sequence",
 			"group": {

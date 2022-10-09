@@ -1,14 +1,9 @@
 #include <iostream>
-#include <fbxsdk.h>
 #include "fbxtest.h"
 
-void helloWorld()
+int main(void)
 {
-    fbxsdk::FbxManager *fbx_manager = fbxsdk::FbxManager::Create();
-
-    std::cout << "create FbxManager" << std::endl;
-
-    fbx_manager->Destroy();
-
-    std::cout << "destroy FbxManager" << std::endl;
+    std::cout << "test code start!" << std::endl;
+    helloWorld();
+    return 0;
 }
