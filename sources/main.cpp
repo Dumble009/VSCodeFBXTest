@@ -1,7 +1,8 @@
 #include <iostream>
 #include <fbxsdk.h>
+#include "fbxtest.h"
 
-int main(void)
+void helloWorld()
 {
     fbxsdk::FbxManager *fbx_manager = fbxsdk::FbxManager::Create();
 
@@ -10,6 +11,4 @@ int main(void)
     fbx_manager->Destroy();
 
     std::cout << "destroy FbxManager" << std::endl;
-
-    return 0;
 }
