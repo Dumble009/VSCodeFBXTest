@@ -1,13 +1,25 @@
 {
 	"version": "2.0.0",
+	"windows": {
+		"options": {
+		  "shell": {
+			"executable": "cmd.exe",
+			"args": [
+			  "/C",
+			  "\"C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/Tools/VsDevCmd.bat\"",
+			  "&&"
+			]
+		  }
+		}
+	  },
     "tasks": [
         {
 			"label": "cmake",
-			"type": "shell",
+			"type": "cmake",
 			"options": {
 				"cwd": "${workspaceRoot}/build"
 			},
-			"command": "cmake --build ${workspaceRoot}/build --config Release --target all -j 8 --",
+			"command": "build"
 		},
 		{
 			"type":"shell",
